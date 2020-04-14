@@ -41,6 +41,8 @@ function cPost($url, $data)
 	return $jir;
 }
 /**
+Db example for remote
+
 Username: yQMbpkKngT
 
 Database name: yQMbpkKngT
@@ -50,6 +52,9 @@ Password: ixZa9LxLFj
 Server: remotemysql.com
 
 Port: 3306
+
+but powefull if u have db host with ip
+
 */
 //setup to ur config
 $setup_Config = array(
