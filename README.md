@@ -5,6 +5,6 @@ U can edit user/password
 U can edit db information
 U can recode to be powerfull
 
-Use : php wp.php list.php
+Use : php wpinstall.php list.php
 
-![image](https://github.com/xcapri/wwwppp/blob/master/wpinstall.JPG)
+![image](https://github.com/xcapri/wwwppp/blob/master/wpinstallll.JPG)
