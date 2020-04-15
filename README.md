@@ -2,8 +2,8 @@
 Wp Install Brantakan Code :v
 
 U can edit user/password
-U can edit db information
-U can recode to be powerfull
+,U can edit db information
+,U can recode to be powerfull
 
 Use : php wpinstall.php list.php
 
